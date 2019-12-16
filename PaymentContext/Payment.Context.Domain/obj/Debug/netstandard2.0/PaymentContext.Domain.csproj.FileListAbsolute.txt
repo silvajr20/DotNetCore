@@ -1,0 +1,11 @@
+C:\Users\IAB\Documents\dev\PaymentContext\PaymentContext.Domain\obj\Debug\netstandard2.0\PaymentContext.Domain.csprojAssemblyReference.cache
+C:\Users\IAB\Documents\dev\PaymentContext\PaymentContext.Domain\obj\Debug\netstandard2.0\PaymentContext.Domain.AssemblyInfoInputs.cache
+C:\Users\IAB\Documents\dev\PaymentContext\PaymentContext.Domain\obj\Debug\netstandard2.0\PaymentContext.Domain.AssemblyInfo.cs
+C:\Users\IAB\Documents\dev\PaymentContext\Payment.Context.Domain\obj\Debug\netstandard2.0\PaymentContext.Domain.csprojAssemblyReference.cache
+C:\Users\IAB\Documents\dev\PaymentContext\Payment.Context.Domain\obj\Debug\netstandard2.0\PaymentContext.Domain.AssemblyInfoInputs.cache
+C:\Users\IAB\Documents\dev\PaymentContext\Payment.Context.Domain\obj\Debug\netstandard2.0\PaymentContext.Domain.AssemblyInfo.cs
+C:\Users\IAB\Documents\dev\PaymentContext\Payment.Context.Domain\bin\Debug\netstandard2.0\PaymentContext.Domain.deps.json
+C:\Users\IAB\Documents\dev\PaymentContext\Payment.Context.Domain\bin\Debug\netstandard2.0\PaymentContext.Domain.dll
+C:\Users\IAB\Documents\dev\PaymentContext\Payment.Context.Domain\bin\Debug\netstandard2.0\PaymentContext.Domain.pdb
+C:\Users\IAB\Documents\dev\PaymentContext\Payment.Context.Domain\obj\Debug\netstandard2.0\PaymentContext.Domain.dll
+C:\Users\IAB\Documents\dev\PaymentContext\Payment.Context.Domain\obj\Debug\netstandard2.0\PaymentContext.Domain.pdb

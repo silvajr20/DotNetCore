@@ -1,0 +1,8 @@
+C:\Users\IAB\Documents\dev\PaymentContext\Payment.Context.Shared\bin\Debug\netstandard2.0\Payment.Context.Shared.deps.json
+C:\Users\IAB\Documents\dev\PaymentContext\Payment.Context.Shared\bin\Debug\netstandard2.0\Payment.Context.Shared.dll
+C:\Users\IAB\Documents\dev\PaymentContext\Payment.Context.Shared\bin\Debug\netstandard2.0\Payment.Context.Shared.pdb
+C:\Users\IAB\Documents\dev\PaymentContext\Payment.Context.Shared\obj\Debug\netstandard2.0\Payment.Context.Shared.csprojAssemblyReference.cache
+C:\Users\IAB\Documents\dev\PaymentContext\Payment.Context.Shared\obj\Debug\netstandard2.0\Payment.Context.Shared.AssemblyInfoInputs.cache
+C:\Users\IAB\Documents\dev\PaymentContext\Payment.Context.Shared\obj\Debug\netstandard2.0\Payment.Context.Shared.AssemblyInfo.cs
+C:\Users\IAB\Documents\dev\PaymentContext\Payment.Context.Shared\obj\Debug\netstandard2.0\Payment.Context.Shared.dll
+C:\Users\IAB\Documents\dev\PaymentContext\Payment.Context.Shared\obj\Debug\netstandard2.0\Payment.Context.Shared.pdb
