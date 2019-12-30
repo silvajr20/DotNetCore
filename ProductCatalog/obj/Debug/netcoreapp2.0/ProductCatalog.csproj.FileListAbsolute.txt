@@ -1,0 +1,4 @@
+C:\Users\IAB\Documents\dev\ProductCatalog\obj\Debug\netcoreapp2.0\ProductCatalog.csprojAssemblyReference.cache
+C:\Users\IAB\Documents\dev\ProductCatalog\obj\Debug\netcoreapp2.0\ProductCatalog.csproj.CoreCompileInputs.cache
+C:\Users\IAB\Documents\dev\ProductCatalog\obj\Debug\netcoreapp2.0\ProductCatalog.AssemblyInfoInputs.cache
+C:\Users\IAB\Documents\dev\ProductCatalog\obj\Debug\netcoreapp2.0\ProductCatalog.AssemblyInfo.cs
