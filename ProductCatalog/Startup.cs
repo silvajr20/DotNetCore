@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using ProductCatalog.Data;
+using ProductCatalog.Repositorios;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace ProductCatalog
 {
@@ -18,8 +20,21 @@ namespace ProductCatalog
         {
             //Adiciona o serviço MVC na configuração da api
             services.AddMvc();
+
+            //Adicionar o compressor de requisições
+            services.AddResponseCompression();
+
             // poderia ser AddScoped
             services.AddScoped<StoreDataContext, StoreDataContext>();
+
+            //Adicionar serviço do repositório do produto
+            services.AddTransient<ProdutoRepositorio, ProdutoRepositorio>();
+
+            services.AddSwaggerGen(x=>{
+                x.SwaggerDoc("v1", new Info{ Title = "Aplicação Crud" , Version = "v1" });
+            });
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,6 +57,18 @@ namespace ProductCatalog
             
             //Adiciona o serviço MVC na aplicação
             app.UseMvc();
+
+            //Adicionar para completar o use (service)
+            app.UseResponseCompression();
+
+            //Adicionar para completar o use (service)
+            app.UseSwagger();
+
+            //Adicionar para poder utilizar a interface gráfica do swagger
+            app.UseSwaggerUI(x => {
+                x.SwaggerEndpoint("/swagger/v1/swagger.json", "Aplicacao - V1");
+            });
+
 
         }
     }

@@ -31,16 +31,18 @@ namespace ProductCatalog.Repositorios{
                         .ToList();
         }
         
+        //Lista o produto pelo código
         public Produto Get(int id){
             return _context.Produtos.AsNoTracking().Where(x => x.id == id).FirstOrDefault();            
         }
 
-        
+        //Post - salva o produto
         public void Save(Produto produto){
             _context.Produtos.Add(produto);
             _context.SaveChanges();
         }
 
+        //Put - atualiza o produto
         public void Update(Produto produto){
             _context.Entry<Produto>(produto).State = EntityState.Modified;
             _context.SaveChanges();

@@ -5,39 +5,30 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProductCatalog.Data;
 using ProductCatalog.Models;
+using ProductCatalog.Repositorios;
 using ProductCatalog.ViewModels.ProdutoViewModels;
 
 namespace ProductCatalog.ViewModels{
 
     public class ProdutoController : Controller{
 
-        private readonly StoreDataContext _context;
+        private readonly ProdutoRepositorio _produtoRepositorio;
 
-        public ProdutoController(StoreDataContext context){
-            _context = context;
+        public ProdutoController(ProdutoRepositorio produtoRepositorio){
+            _produtoRepositorio = produtoRepositorio;
         }
 
         [Route("v1/produtos")]
         [HttpGet]
+        [ResponseCache(Duration=60)] //Essa estratégia diminui a carga de trabalho do servidor
         public IEnumerable<ListProdutoViewModel> Get(){
-            return _context.Produtos
-                        .Include(x => x.Categoria)
-                        .Select(x => new ListProdutoViewModel
-                        {
-                            id = x.id,
-                            Title = x.Title,
-                            Price = x.Price,
-                            Categoria = x.Categoria.Title,
-                            CategoriaId = x.Categoria.Id
-
-                        }).AsNoTracking()
-                        .ToList();
+            return _produtoRepositorio.Get();
         }
 
         [Route("v1/produtos/{id}")]
         [HttpGet]
         public Produto Get(int id){
-                return _context.Produtos.AsNoTracking().Where(x => x.id == id).FirstOrDefault();
+                return _produtoRepositorio.Get(id);
         }
 
         [Route("v1/produtos")]
@@ -61,8 +52,12 @@ namespace ProductCatalog.ViewModels{
             produto.Price = model.Price;
             produto.Quantity = model.Quantity;
 
-            _context.Produtos.Add(produto);
-            _context.SaveChanges();
+            //Versao sem repositorio
+            //_context.Produtos.Add(produto);
+            //_context.SaveChanges();
+
+            //Versao com repositorio
+            _produtoRepositorio.Save(produto);
 
             return new ResultViewModel
             {
@@ -84,7 +79,7 @@ namespace ProductCatalog.ViewModels{
                     Message = "Não foi possível alterar o produto.",
                     Data = model.Notifications
                 };
-            var produto = _context.Produtos.Find(model.id);
+            var produto = _produtoRepositorio.Get(model.id);
             produto.Title = model.Title;
             produto.CategoriaId = model.CategoriaId;
             //produto.CreateDate = DateTime.Now;
@@ -94,18 +89,20 @@ namespace ProductCatalog.ViewModels{
             produto.Price = model.Price;
             produto.Quantity = model.Quantity;
 
-            _context.Entry<Produto>(produto).State = EntityState.Modified;
-            _context.SaveChanges();
+
+            //Versao sem repositorio
+            //_context.Entry<Produto>(produto).State = EntityState.Modified;
+            //_context.SaveChanges();
+
+            //Versao com repositorio
+            _produtoRepositorio.Update(produto);
 
             return new ResultViewModel{
                 Sucess = true,
                 Message = "Produto alterado com sucesso.",
                 Data = produto    
             };
-
-
          }
-
 
 
 
