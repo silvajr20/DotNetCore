@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using MongoDB.Driver;
 using ProductCatalog.Data.Maps;
 using ProductCatalog.Models;
 
@@ -13,6 +14,7 @@ namespace ProductCatalog.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder){
             optionsBuilder.UseSqlServer(@"Server=localhost,1433;Database=CatProds;User ID=Sa; Password=senha%root123");
+                               
         }
 
 
