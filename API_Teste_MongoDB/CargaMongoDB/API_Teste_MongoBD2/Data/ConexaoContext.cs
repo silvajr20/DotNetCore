@@ -24,7 +24,7 @@ namespace API_Teste_MongoDB.Data
 
             var filter = Builders<T>.Filter.Eq("codigo", codigo);
 
-            return db.GetCollection<T>("grade")
+            return db.GetCollection<T>("users")
                 .Find(filter).FirstOrDefault();
         }
 
