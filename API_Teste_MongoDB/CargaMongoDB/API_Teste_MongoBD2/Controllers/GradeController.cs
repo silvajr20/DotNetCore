@@ -9,8 +9,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API_Teste_MongoDB.Controllers
 {
-    
-        [Route("api/[controller]")]
+        // Rota do navegador:       https://localhost:5001/api/Grade/grades/2
+    [Route("api/[controller]")]
         public class GradeController : Controller
         {
             private ConexaoContext _context;
@@ -20,12 +20,12 @@ namespace API_Teste_MongoDB.Controllers
                 _context = context;
             }
 
-            [HttpGet("grade/{id}")]
-            public ActionResult<Grade> GetGrade(string id)
+            [HttpGet("grades/{codigo}")]
+            public ActionResult<Grade> GetGrade(string codigo)
             {
                 Grade grade = null;
-                if (id.StartsWith("ID"))
-                grade = _context.ObterItem<Grade>(id);
+                //if (id.StartsWith("GRAD"))
+                grade = _context.ObterItem<Grade>(codigo);
 
                 if (grade != null)
                     return new ObjectResult(grade);

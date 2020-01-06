@@ -16,13 +16,13 @@ namespace API_Teste_MongoDB.Data
             _configuration = config;
         }
 
-        public T ObterItem<T>(String id)
+        public T ObterItem<T>(string codigo)
         {
             MongoClient client = new MongoClient(
                 _configuration.GetSection("MongoDB:ConexaoString").Value);
             IMongoDatabase db = client.GetDatabase("API_Teste");
 
-            var filter = Builders<T>.Filter.Eq("id", id);
+            var filter = Builders<T>.Filter.Eq("codigo", codigo);
 
             return db.GetCollection<T>("grade")
                 .Find(filter).FirstOrDefault();

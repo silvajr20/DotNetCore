@@ -10,15 +10,15 @@ namespace API_Teste_MongoDB.Models
     {
 
         public ObjectId _id { get; set; }
-        public String id { get; set; }
-        public String name { get; set; }
-        public String deleted { get; set; }
-        public String createdate { get; set; }
-        public String createuserid { get; set; }
-        public String deletedate { get; set; }
+        public string codigo { get; set; }
+        public string name { get; set; }
+        public string deleted { get; set; }
+        public string createdate { get; set; }
+        public string createuserid { get; set; }
+        public string deletedate { get; set; }
         public string deleteuserid { get; set; }
         public string updatedate { get; set; }
-        public String updateuserid { get; set; }
+        public string updateuserid { get; set; }
 
 
 
