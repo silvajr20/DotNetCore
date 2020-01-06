@@ -1,0 +1,11 @@
+C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\CargaMongoDB\bin\Debug\netcoreapp3.1\CargaMongoDB.exe
+C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\CargaMongoDB\obj\Debug\netcoreapp3.1\CargaMongoDB.csprojAssemblyReference.cache
+C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\CargaMongoDB\obj\Debug\netcoreapp3.1\CargaMongoDB.AssemblyInfoInputs.cache
+C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\CargaMongoDB\obj\Debug\netcoreapp3.1\CargaMongoDB.AssemblyInfo.cs
+C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\CargaMongoDB\bin\Debug\netcoreapp3.1\MongoDB.Bson.dll
+C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\CargaMongoDB\obj\Debug\netcoreapp3.1\CargaMongoDB.csproj.CopyComplete
+C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\CargaMongoDB\bin\Debug\netcoreapp3.1\DnsClient.dll
+C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\CargaMongoDB\bin\Debug\netcoreapp3.1\MongoDB.Driver.dll
+C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\CargaMongoDB\bin\Debug\netcoreapp3.1\MongoDB.Driver.Core.dll
+C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\CargaMongoDB\bin\Debug\netcoreapp3.1\MongoDB.Libmongocrypt.dll
+C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\CargaMongoDB\bin\Debug\netcoreapp3.1\SharpCompress.dll

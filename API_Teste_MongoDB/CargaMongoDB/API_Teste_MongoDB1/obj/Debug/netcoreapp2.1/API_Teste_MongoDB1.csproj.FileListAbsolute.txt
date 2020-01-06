@@ -1,0 +1,14 @@
+C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\API_Teste_MongoDB1\obj\Debug\netcoreapp2.1\API_Teste_MongoDB1.RazorAssemblyInfo.cache
+C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\API_Teste_MongoDB1\obj\Debug\netcoreapp2.1\API_Teste_MongoDB1.RazorAssemblyInfo.cs
+C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\API_Teste_MongoDB1\obj\Debug\netcoreapp2.1\API_Teste_MongoDB1.AssemblyInfoInputs.cache
+C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\API_Teste_MongoDB1\obj\Debug\netcoreapp2.1\API_Teste_MongoDB1.AssemblyInfo.cs
+C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\API_Teste_MongoDB1\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\API_Teste_MongoDB1\bin\Debug\netcoreapp2.1\API_Teste_MongoDB1.deps.json
+C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\API_Teste_MongoDB1\bin\Debug\netcoreapp2.1\API_Teste_MongoDB1.runtimeconfig.json
+C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\API_Teste_MongoDB1\bin\Debug\netcoreapp2.1\API_Teste_MongoDB1.runtimeconfig.dev.json
+C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\API_Teste_MongoDB1\bin\Debug\netcoreapp2.1\API_Teste_MongoDB1.dll
+C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\API_Teste_MongoDB1\bin\Debug\netcoreapp2.1\API_Teste_MongoDB1.pdb
+C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\API_Teste_MongoDB1\obj\Debug\netcoreapp2.1\API_Teste_MongoDB1.RazorTargetAssemblyInfo.cache
+C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\API_Teste_MongoDB1\obj\Debug\netcoreapp2.1\API_Teste_MongoDB1.dll
+C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\API_Teste_MongoDB1\obj\Debug\netcoreapp2.1\API_Teste_MongoDB1.pdb
+C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\API_Teste_MongoDB1\obj\Debug\netcoreapp2.1\API_Teste_MongoDB1.csprojAssemblyReference.cache

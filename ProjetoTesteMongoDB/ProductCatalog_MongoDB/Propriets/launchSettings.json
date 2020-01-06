@@ -18,7 +18,7 @@
           "ASPNETCORE_ENVIRONMENT": "Development"
         }
       },
-      "APICatalogo": {
+      "ProductCatalog": {
         "commandName": "Project",
         "launchBrowser": true,
         "launchUrl": "api/ProdutoNovo/produtos/PROD1",

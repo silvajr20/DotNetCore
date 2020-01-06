@@ -12949,11 +12949,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\IAB\\Documents\\GitHub\\DotNetCore\\ProductCatalog_MongoDB\\ProductCatalog.csproj",
+      "projectUniqueName": "C:\\Users\\IAB\\Documents\\GitHub\\DotNetCore\\ProjetoTesteMongoDB\\ProductCatalog_MongoDB\\ProductCatalog.csproj",
       "projectName": "ProductCatalog",
-      "projectPath": "C:\\Users\\IAB\\Documents\\GitHub\\DotNetCore\\ProductCatalog_MongoDB\\ProductCatalog.csproj",
+      "projectPath": "C:\\Users\\IAB\\Documents\\GitHub\\DotNetCore\\ProjetoTesteMongoDB\\ProductCatalog_MongoDB\\ProductCatalog.csproj",
       "packagesPath": "C:\\Users\\IAB\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\IAB\\Documents\\GitHub\\DotNetCore\\ProductCatalog_MongoDB\\obj\\",
+      "outputPath": "C:\\Users\\IAB\\Documents\\GitHub\\DotNetCore\\ProjetoTesteMongoDB\\ProductCatalog_MongoDB\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13004,7 +13004,6 @@
             "version": "[2.1.0, )"
           },
           "Microsoft.NETCore.App": {
-            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
@@ -13027,16 +13026,10 @@
           }
         },
         "imports": [
-          "net461",
-          "net462",
-          "net47",
-          "net471",
-          "net472",
-          "net48"
+          "net461"
         ],
         "assetTargetFallback": true,
-        "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        "warn": true
       }
     }
   }
