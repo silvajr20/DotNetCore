@@ -12,24 +12,26 @@ namespace API_Teste_MongoBD2.Controllers
     [Route("api/[controller]")]
     public class UsersController : Controller
     {
-        private ConexaoContext _context;
+        private UsersContext _context;
 
-        public UsersController(ConexaoContext context)
+        public UsersController(UsersContext context)
         {
             _context = context;
         }
 
-        [HttpGet("users/{codigo}")]
-        public ActionResult<Users> GetGrade(string codigo)
+        [HttpGet("users/{id}")]
+        public ActionResult<Users> GetGrade(string id)
         {
             Users users = null;
             //if (id.StartsWith("GRAD"))
-            users = _context.ObterItem<Users>(codigo);
+            users = _context.ObterItem<Users>(id);
 
             if (users != null)
                 return new ObjectResult(users);
             else
-                return NotFound();
+                return Json("Nenhum usuario encontrado.");
+                //return NotFound();
+
         }
     }
 

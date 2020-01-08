@@ -33,7 +33,10 @@ namespace API_Teste_MongoDB1
         {
             services.AddSingleton<IConfiguration>(Configuration);
 
-            services.AddTransient<ConexaoContext>();
+            //Para acessar os dados das coleções
+            services.AddTransient<GradeContext>();
+            services.AddTransient<UsersContext>();
+            
 
             //Adiciona o serviço MVC na configuração da api
             services.AddMvc();
@@ -60,7 +63,6 @@ namespace API_Teste_MongoDB1
             app.UseResponseCompression();
 
            
-
 
         }
     }
