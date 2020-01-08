@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using API_Teste_MongoBD2.Data;
 using API_Teste_MongoDB.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -36,11 +37,11 @@ namespace API_Teste_MongoDB1
             //Para acessar os dados das coleções
             services.AddTransient<GradeContext>();
             services.AddTransient<UsersContext>();
-            
+            services.AddTransient<UserLogContext>();
+            services.AddTransient<UserProgressContext>();
 
             //Adiciona o serviço MVC na configuração da api
             services.AddMvc();
-
 
             //Adicionar o compressor de requisições
             services.AddResponseCompression();
