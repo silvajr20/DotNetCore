@@ -57,7 +57,7 @@ namespace API_Teste_MongoBD2.Controllers
         }
 
 
-        //Remove um elemento da coleção grade através do id
+        //Remove um elemento da coleção userdetail através do id
         [HttpDelete("deletar/{id}")]
         public IActionResult Delete(string id)
         {

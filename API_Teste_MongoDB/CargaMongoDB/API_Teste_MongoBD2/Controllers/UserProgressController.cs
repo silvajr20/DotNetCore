@@ -26,14 +26,14 @@ namespace API_Teste_MongoBD2.Controllers
         {
             return _contextUserProgress.Get();
         }
-        //Lista um elemento da coleção userLog através do código
+        //Lista um elemento da coleção userprogress através do código
         [HttpGet("{id}")]
         public ActionResult<UserProgress> GetUserProgress(string id)
         {
             return _contextUserProgress.Get(id);
         }
 
-        //Salvar um elemento na coleção grade
+        //Salvar um elemento na coleção userprogress
         [HttpPost("save/")]
         public ActionResult Create([FromBody] UserProgress userprogress)
         {
@@ -41,7 +41,7 @@ namespace API_Teste_MongoBD2.Controllers
             return CreatedAtRoute("GetUserProgress", new { id = userprogress.id.ToString() }, userprogress);
         }
 
-        //Atualiza um elemento da coleção grade
+        //Atualiza um elemento da coleção userprogress
         [HttpPut("update/{id}/")]
         public IActionResult Update(string id, [FromBody] UserProgress userprogressIn)
         {
@@ -57,7 +57,7 @@ namespace API_Teste_MongoBD2.Controllers
         }
 
 
-        //Remove um elemento da coleção grade através do id
+        //Remove um elemento da coleção userprogress através do id
         [HttpDelete("deletar/{id}")]
         public IActionResult Delete(string id)
         {

@@ -13,7 +13,7 @@ namespace API_Teste_MongoBD2.Data
     {
         
         private IConfiguration _configuration;
-        //Array com uma cópia dos dados da coleção de userlog
+        //Array com uma cópia dos dados da coleção de userprogress
         private readonly IMongoCollection<UserProgress> _userProgress;
 
 
@@ -28,33 +28,33 @@ namespace API_Teste_MongoBD2.Data
             _userProgress = db.GetCollection<UserProgress>("app.userprogress");
         }
 
-        //Listar todas as userlogs
+        //Listar todas as userprogress
         public List<UserProgress> Get()
         {
             return _userProgress.Find(new BsonDocument()).ToList();
         }
-        //Listar um userlog pelo id
+        //Listar um userprogress pelo id
         public UserProgress Get(string id)
         {
             return _userProgress.Find<UserProgress>(userprogress => userprogress.id == id).FirstOrDefault();
         }
-        //Salvar um userlog (save ou create)
+        //Salvar um userprogress (save ou create)
         public UserProgress Create(UserProgress userprogress)
         {
             _userProgress.InsertOne(userprogress);
             return userprogress;
         }
-        //Atualizar um userlog (PUT ou POST copy)
+        //Atualizar um userprogress (PUT ou POST copy)
         public void Update(string id, UserProgress userprogress1)
         {
             _userProgress.ReplaceOne(userprogress => userprogress.id == id, userprogress1);
         }
-        //Deletar um userlog pelo objeto (Delete)
+        //Deletar um userprogress pelo objeto (Delete)
         public void Remove(UserProgress userprogress1)
         {
             _userProgress.DeleteOne(userprogress => userprogress.id == userprogress1.id);
         }
-        //Deletar um userlog pelo id (Delete)
+        //Deletar um userprogress pelo id (Delete)
         public void Remove(string id)
         {
             _userProgress.DeleteOne(userprogress => userprogress.id == id);

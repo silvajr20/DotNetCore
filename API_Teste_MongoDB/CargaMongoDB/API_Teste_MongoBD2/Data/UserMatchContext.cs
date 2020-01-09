@@ -27,33 +27,33 @@ namespace API_Teste_MongoBD2.Data
             _userMatch = db.GetCollection<UserMatch>("ilhas.usermatch");
         }
 
-        //Listar todas as userlogs
+        //Listar todas as usermatch
         public List<UserMatch> Get()
         {
             return _userMatch.Find(new BsonDocument()).ToList();
         }
-        //Listar um userlog pelo id
+        //Listar um usermatch pelo id
         public UserMatch Get(string id)
         {
             return _userMatch.Find<UserMatch>(usermatch => usermatch.id == id).FirstOrDefault();
         }
-        //Salvar um userlog (save ou create)
+        //Salvar um usermatch (save ou create)
         public UserMatch Create(UserMatch usermatch)
         {
             _userMatch.InsertOne(usermatch);
             return usermatch;
         }
-        //Atualizar um userlog (PUT ou POST copy)
+        //Atualizar um usermatch (PUT ou POST copy)
         public void Update(string id, UserMatch usermatch1)
         {
             _userMatch.ReplaceOne(usermatch => usermatch.id == id, usermatch1);
         }
-        //Deletar um userlog pelo objeto (Delete)
+        //Deletar um usermatch pelo objeto (Delete)
         public void Remove(UserMatch usermatch1)
         {
             _userMatch.DeleteOne(usermatch => usermatch.id == usermatch1.id);
         }
-        //Deletar um userlog pelo id (Delete)
+        //Deletar um usermatch pelo id (Delete)
         public void Remove(string id)
         {
             _userMatch.DeleteOne(usermatch => usermatch.id == id);

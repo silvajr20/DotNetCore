@@ -32,7 +32,7 @@ namespace API_Teste_MongoBD2.Controllers
             return _contextUserLog.Get(id);
         }
 
-        //Salvar um elemento na coleção grade
+        //Salvar um elemento na coleção userLog
         [HttpPost("save/")]
         public ActionResult Create([FromBody] UserLog userLog)
         {
@@ -40,7 +40,7 @@ namespace API_Teste_MongoBD2.Controllers
             return CreatedAtRoute("GetUserLog", new { id = userLog.id.ToString() }, userLog);
         }
 
-        //Atualiza um elemento da coleção grade
+        //Atualiza um elemento da coleção userLog
         [HttpPut("update/{id}/")]
         public IActionResult Update(string id, [FromBody] UserLog userLogIn)
         {
@@ -56,7 +56,7 @@ namespace API_Teste_MongoBD2.Controllers
         }
 
 
-        //Remove um elemento da coleção grade através do id
+        //Remove um elemento da coleção userLog através do id
         [HttpDelete("deletar/{id}")]
         public IActionResult Delete(string id)
         {
