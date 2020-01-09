@@ -39,6 +39,9 @@ namespace API_Teste_MongoDB1
             services.AddTransient<UsersContext>();
             services.AddTransient<UserLogContext>();
             services.AddTransient<UserProgressContext>();
+            services.AddTransient<UserDetailContext>();
+            services.AddTransient<UserMatchContext>();
+            services.AddTransient<UserMatchDetailsContext>();
 
             //Adiciona o serviço MVC na configuração da api
             services.AddMvc();

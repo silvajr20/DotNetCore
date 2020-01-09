@@ -13,5 +13,5 @@ C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\API_Test
 C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\API_Teste_MongoBD2\bin\Debug\netcoreapp2.1\API_Teste_MongoBD2.pdb
 C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\API_Teste_MongoBD2\obj\Debug\netcoreapp2.1\API_Teste_MongoBD2.dll
 C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\API_Teste_MongoBD2\obj\Debug\netcoreapp2.1\API_Teste_MongoBD2.pdb
-C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\API_Teste_MongoBD2\obj\Debug\netcoreapp2.1\API_Teste_MongoBD2.csprojAssemblyReference.cache
 C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\API_Teste_MongoBD2\bin\Debug\netcoreapp2.1\Properts\launchSettings.json
+C:\Users\IAB\Documents\GitHub\DotNetCore\API_Teste_MongoDB\CargaMongoDB\API_Teste_MongoBD2\obj\Debug\netcoreapp2.1\API_Teste_MongoBD2.csprojAssemblyReference.cache
